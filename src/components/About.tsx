@@ -14,12 +14,12 @@ const About = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold">
-              Database & Data Professional with expertise in data engineering and analysis
+              Data Engineer & Data Analyst with expertise in data engineering and analysis
             </h3>
             <p className="text-muted-foreground">
-              I am Prithvi Khawas, a Database Engineer and Data Analyst with a Bachelor's degree in Computer Science and
+              I am Prithvi Khawas, a Data Engineer and Data Analyst with a Bachelor's degree in Computer Science and
               Information Technology from Deerwalk Institute of Technology. With professional experience in
-              database engineering and data migration, I've developed a strong foundation
+              data engineering and data migration, I've developed a strong foundation
               in transforming and analyzing data to derive valuable insights.
             </p>
             <p className="text-muted-foreground">
@@ -57,7 +57,7 @@ const About = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-lg mb-1">Experience</h4>
-                    <p className="text-muted-foreground">1+ year as a Database Engineer specializing in data migration and QA at Pioneer Associate Pvt. Ltd</p>
+                    <p className="text-muted-foreground">1+ year as a Data Engineer specializing in data migration and QA at Pioneer Associate Pvt. Ltd</p>
                   </div>
                 </div>
               </CardContent>

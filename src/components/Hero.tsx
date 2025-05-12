@@ -20,7 +20,7 @@ const Hero = () => {
         </h1>
         <div className="h-1 w-24 bg-gradient-to-r from-data-blue to-data-teal mx-auto mb-6 opacity-0 animate-fade-in" style={{ animationDelay: '0.6s' }}></div>
         <h2 className="text-xl md:text-3xl font-medium mb-8 opacity-0 animate-fade-in" style={{ animationDelay: '0.8s' }}>
-          Database Engineer & Data Analyst
+          Data Engineer & Data Analyst
         </h2>
         <p className="max-w-2xl mx-auto text-muted-foreground mb-10 opacity-0 animate-fade-in" style={{ animationDelay: '1s' }}>
           Transforming raw data into meaningful insights through engineering, analytics, and visualization. 

@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge";
 const experienceData = [
   {
     id: 1,
-    role: "Database Engineer",
+    role: "Data Engineer",
     company: "Pioneer Associate Pvt. Ltd",
     period: "March 2024 - April 2025",
     location: "Lalitpur, Nepal",
@@ -42,7 +42,7 @@ const Experience = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Professional Experience</h2>
           <div className="h-1 w-20 bg-gradient-to-r from-data-blue to-data-teal mx-auto mb-6"></div>
           <p className="max-w-2xl mx-auto text-muted-foreground">
-            My professional journey in database engineering and data analysis
+            My professional journey in data engineering and data analysis
           </p>
         </div>
 
