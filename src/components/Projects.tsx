@@ -7,7 +7,9 @@ import {
   FileText, 
   ChartBar,
   Code,
-  Server
+  Server,
+  BarChart,
+  LineChart
 } from "lucide-react";
 
 const projectsData = [
@@ -29,10 +31,10 @@ const projectsData = [
   },
   {
     id: 3,
-    title: "Data Migration in NexGenCosys Software",
-    description: "Developed and executed SQL Server scripts for data extraction and transformation, implementing best practices for analyzing and filtering data from third-party sources.",
-    icon: <Server className="h-10 w-10 text-data-purple" />,
-    skills: ["SQL Server", "Data Migration", "Data Transformation"],
+    title: "SQL Data Cleaning & Transformation",
+    description: "Performed comprehensive data cleaning on large datasets using SQL. Implemented complex queries to handle missing values, duplicates, and inconsistencies in customer and transaction data.",
+    icon: <Database className="h-10 w-10 text-data-purple" />,
+    skills: ["SQL", "Data Cleaning", "ETL", "Data Quality"],
     color: "bg-purple-50"
   },
   {
@@ -45,27 +47,35 @@ const projectsData = [
   },
   {
     id: 5,
-    title: "Store Data Analysis using Excel",
-    description: "Performed data cleaning, preprocessing and analysis using Excel. Implemented an interactive dashboard with slicer connection and extracted key insights through visual analysis.",
+    title: "Sales Insights Dashboard with Excel",
+    description: "Performed data cleaning and preprocessing on sales data using Excel. Implemented an interactive dashboard with slicers to visualize key sales metrics, trends, and regional performance.",
     icon: <FileText className="h-10 w-10 text-data-blue" />,
-    skills: ["Excel", "Data Cleaning", "Dashboard Design", "Data Analysis"],
+    skills: ["Excel", "Data Cleaning", "Dashboard Design", "Sales Analytics"],
     color: "bg-blue-50"
   },
   {
     id: 6,
-    title: "Data Professional Survey Breakdown",
-    description: "Performed data cleaning and preprocessing for a professional survey dataset. Designed interactive dashboards in Power BI and applied filters for in-depth visualizations.",
+    title: "Sales Performance Dashboard with Power BI",
+    description: "Created comprehensive sales insights dashboard with Power BI using customer and transaction data. Designed interactive visualizations showing sales trends, customer segments, and product performance.",
     icon: <ChartBar className="h-10 w-10 text-data-teal" />,
-    skills: ["Power BI", "Data Visualization", "Survey Analysis"],
+    skills: ["Power BI", "Data Visualization", "Sales Analytics", "Dashboard Design"],
     color: "bg-teal-50"
   },
   {
     id: 7,
+    title: "Regional Sales Analysis with Tableau",
+    description: "Developed interactive Tableau dashboards visualizing regional sales performance, customer demographics, and product category analysis. Implemented drill-down capabilities for detailed insights.",
+    icon: <BarChart className="h-10 w-10 text-data-purple" />,
+    skills: ["Tableau", "Data Visualization", "Sales Analytics", "Interactive Dashboards"],
+    color: "bg-purple-50"
+  },
+  {
+    id: 8,
     title: "Heart Disease EDA and Prediction",
     description: "Performed exploratory data analysis using Python libraries on health data. Implemented machine learning models like SVM, Random Forest and MLP for heart disease prediction.",
-    icon: <Code className="h-10 w-10 text-data-purple" />,
+    icon: <LineChart className="h-10 w-10 text-data-navy" />,
     skills: ["Python", "EDA", "Machine Learning", "Healthcare Analytics"],
-    color: "bg-purple-50"
+    color: "bg-indigo-50"
   }
 ];
 
@@ -77,7 +87,7 @@ const Projects = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Projects</h2>
           <div className="h-1 w-20 bg-gradient-to-r from-data-blue to-data-teal mx-auto mb-6"></div>
           <p className="max-w-2xl mx-auto text-muted-foreground">
-            Explore my projects showcasing skills in database engineering, data analysis, and visualization
+            Explore my projects showcasing skills in database engineering, data cleaning, analysis, and visualization
             using various tools and technologies.
           </p>
         </div>
