@@ -20,11 +20,11 @@ const Hero = () => {
         </h1>
         <div className="h-1 w-24 bg-gradient-to-r from-data-blue to-data-teal mx-auto mb-6 opacity-0 animate-fade-in" style={{ animationDelay: '0.6s' }}></div>
         <h2 className="text-xl md:text-3xl font-medium mb-8 opacity-0 animate-fade-in" style={{ animationDelay: '0.8s' }}>
-          Data Engineer & Analyst
+          Database Engineer & Data Analyst
         </h2>
         <p className="max-w-2xl mx-auto text-muted-foreground mb-10 opacity-0 animate-fade-in" style={{ animationDelay: '1s' }}>
           Transforming raw data into meaningful insights through engineering, analytics, and visualization. 
-          Specializing in data migration, cleaning, and creating insightful dashboards with SQL, Tableau, 
+          Specializing in data migration, quality assurance, and creating insightful dashboards with SQL, 
           Power BI, Python, and Airflow.
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4 opacity-0 animate-fade-in" style={{ animationDelay: '1.2s' }}>

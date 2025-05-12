@@ -4,30 +4,33 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const skillsData = [
   {
-    category: "Data Engineering",
+    category: "Database & Data Engineering",
     skills: [
       { name: "SQL", proficiency: 90 },
-      { name: "Airflow", proficiency: 75 },
-      { name: "Data Migration", proficiency: 85 },
-      { name: "Data Quality Assurance", proficiency: 90 },
+      { name: "PostgreSQL", proficiency: 85 },
+      { name: "MySQL", proficiency: 85 },
+      { name: "ETL Processes", proficiency: 80 },
+      { name: "Data Migration", proficiency: 90 },
     ]
   },
   {
-    category: "Data Analysis",
+    category: "Data Analysis & Visualization",
     skills: [
-      { name: "Excel", proficiency: 95 },
-      { name: "Python (EDA)", proficiency: 80 },
-      { name: "Statistical Analysis", proficiency: 75 },
+      { name: "Python (NumPy, Pandas)", proficiency: 85 },
+      { name: "Excel", proficiency: 90 },
+      { name: "Power BI", proficiency: 85 },
+      { name: "Matplotlib/Seaborn", proficiency: 80 },
       { name: "Data Cleaning", proficiency: 90 },
     ]
   },
   {
-    category: "Data Visualization",
+    category: "Tools & Technologies",
     skills: [
-      { name: "Tableau", proficiency: 85 },
-      { name: "Power BI", proficiency: 85 },
-      { name: "Dashboard Design", proficiency: 80 },
-      { name: "Data Storytelling", proficiency: 75 },
+      { name: "Apache Airflow", proficiency: 80 },
+      { name: "Docker", proficiency: 75 },
+      { name: "Hadoop", proficiency: 70 },
+      { name: "Git", proficiency: 85 },
+      { name: "Jupyter Notebook", proficiency: 85 },
     ]
   },
 ];
@@ -75,9 +78,9 @@ const Skills = () => {
         </div>
         
         <div className="mt-16 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 md:gap-8">
-          {["SQL", "Excel", "Python", "Airflow", "Tableau", "PowerBI"].map((tech) => (
+          {["SQL", "Python", "PostgreSQL", "Excel", "Power BI", "Airflow", "Docker", "Hadoop", "Git"].map((tech, index) => (
             <div 
-              key={tech} 
+              key={index} 
               className="flex items-center justify-center bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow"
             >
               <span className="font-medium text-center">{tech}</span>

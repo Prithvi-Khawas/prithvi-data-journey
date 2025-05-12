@@ -5,29 +5,32 @@ import { Badge } from "@/components/ui/badge";
 const experienceData = [
   {
     id: 1,
-    role: "Data Engineer",
-    company: "Tech Solutions Inc.",
-    period: "2023 - Present",
+    role: "Database Engineer",
+    company: "Pioneer Associate Pvt. Ltd",
+    period: "March 2024 - April 2025",
+    location: "Lalitpur, Nepal",
     responsibilities: [
-      "Led data migration projects, ensuring data integrity and quality throughout the process",
-      "Developed robust QA procedures for data validation and verification",
-      "Implemented ETL pipelines for efficient data processing",
-      "Collaborated with cross-functional teams to align data solutions with business requirements"
+      "Data extraction from different sources and analyzed it for insights",
+      "Data migration and QA",
+      "Implemented ETL for third parties migration",
+      "Implemented best practices in SQL scripts ensure data migration",
+      "Handled large database and maintained in SQL Server"
     ],
-    skills: ["Data Migration", "Data Quality Assurance", "ETL", "SQL"],
+    skills: ["Data Migration", "ETL", "SQL Server", "Data Quality Assurance"],
   },
   {
     id: 2,
-    role: "Data Analyst Intern",
-    company: "DataTech Solutions",
-    period: "2022 - 2023",
+    role: "Frontend Developer Intern",
+    company: "Infinite IT Solutions",
+    period: "March 2021 - February 2022",
+    location: "Biratnagar, Nepal (Remote)",
     responsibilities: [
-      "Created detailed sales analysis reports using Excel and SQL",
-      "Developed interactive dashboards in Tableau for executive stakeholders",
-      "Performed data cleaning and preprocessing for various analytics projects",
-      "Collaborated with marketing team to deliver data-driven insights"
+      "Designed and implemented frontend for the projects",
+      "Updated and enhanced pre-existing projects, making them more user-friendly and efficient",
+      "Collaborated with the design and development teams to ensure seamless integration and functionality",
+      "Implemented best practices in frontend development to optimize performance and user experience"
     ],
-    skills: ["Data Analysis", "SQL", "Excel", "Tableau"],
+    skills: ["Frontend Development", "UI/UX", "Collaboration"],
   }
 ];
 
@@ -39,7 +42,7 @@ const Experience = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Professional Experience</h2>
           <div className="h-1 w-20 bg-gradient-to-r from-data-blue to-data-teal mx-auto mb-6"></div>
           <p className="max-w-2xl mx-auto text-muted-foreground">
-            My professional journey in the data engineering and analysis field
+            My professional journey in database engineering and data analysis
           </p>
         </div>
 
@@ -49,12 +52,18 @@ const Experience = () => {
               <CardContent className="p-8">
                 <div className="flex flex-col md:flex-row md:items-start justify-between gap-4">
                   <div>
-                    <div className="flex items-center mb-2">
+                    <div className="flex flex-col sm:flex-row sm:items-center mb-2 gap-2">
                       <h3 className="text-xl font-semibold">{exp.role}</h3>
-                      <span className="mx-2 text-muted-foreground">•</span>
-                      <span className="text-data-blue font-medium">{exp.company}</span>
+                      <div className="flex items-center">
+                        <span className="hidden sm:inline mx-2 text-muted-foreground">•</span>
+                        <span className="text-data-blue font-medium">{exp.company}</span>
+                      </div>
                     </div>
-                    <p className="text-muted-foreground mb-4">{exp.period}</p>
+                    <div className="flex flex-col sm:flex-row sm:items-center mb-4 text-sm text-muted-foreground">
+                      <p>{exp.period}</p>
+                      <span className="hidden sm:inline mx-2">•</span>
+                      <p>{exp.location}</p>
+                    </div>
                     <ul className="list-disc pl-5 space-y-2 mb-4">
                       {exp.responsibilities.map((item, index) => (
                         <li key={index} className="text-muted-foreground">{item}</li>

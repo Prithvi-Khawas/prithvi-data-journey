@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/components/ui/use-toast";
-import { User, Mail, ArrowRight } from "lucide-react";
+import { User, Mail, Phone, MapPin, Linkedin, Github, ArrowRight } from "lucide-react";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -78,7 +78,61 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold">Email</h4>
-                  <p className="text-muted-foreground">contact@prithvikhawas.com</p>
+                  <p className="text-muted-foreground">prithvikhawas740@gmail.com</p>
+                </div>
+              </div>
+
+              <div className="flex items-start">
+                <div className="mr-4 bg-blue-50 p-3 rounded-md">
+                  <Phone className="h-5 w-5 text-data-blue" />
+                </div>
+                <div>
+                  <h4 className="font-semibold">Phone</h4>
+                  <p className="text-muted-foreground">0528320024</p>
+                </div>
+              </div>
+
+              <div className="flex items-start">
+                <div className="mr-4 bg-blue-50 p-3 rounded-md">
+                  <MapPin className="h-5 w-5 text-data-blue" />
+                </div>
+                <div>
+                  <h4 className="font-semibold">Location</h4>
+                  <p className="text-muted-foreground">Al Nahda, UAE</p>
+                </div>
+              </div>
+
+              <div className="flex items-start">
+                <div className="mr-4 bg-blue-50 p-3 rounded-md">
+                  <Linkedin className="h-5 w-5 text-data-blue" />
+                </div>
+                <div>
+                  <h4 className="font-semibold">LinkedIn</h4>
+                  <a 
+                    href="https://linkedin.com/in/prithvi-khawas-236a091a2" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-data-blue hover:underline"
+                  >
+                    linkedin.com/in/prithvi-khawas-236a091a2
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-start">
+                <div className="mr-4 bg-blue-50 p-3 rounded-md">
+                  <Github className="h-5 w-5 text-data-blue" />
+                </div>
+                <div>
+                  <h4 className="font-semibold">GitHub</h4>
+                  <a 
+                    href="https://github.com/Prithvi-Khawas" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-data-blue hover:underline"
+                  >
+                    github.com/Prithvi-Khawas
+                  </a>
                 </div>
               </div>
             </div>

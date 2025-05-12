@@ -14,22 +14,22 @@ const About = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold">
-              Data Professional with a passion for transforming raw data into actionable insights
+              Database & Data Professional with expertise in data engineering and analysis
             </h3>
             <p className="text-muted-foreground">
-              I am Prithvi Khawas, a Data Engineer and Analyst with a Bachelor's degree in Computer Science and
-              Information Technology. With one year of professional experience in data engineering,
-              focusing on data migration and quality assurance, I've developed a strong foundation
+              I am Prithvi Khawas, a Database Engineer and Data Analyst with a Bachelor's degree in Computer Science and
+              Information Technology from Deerwalk Institute of Technology. With professional experience in
+              database engineering and data migration, I've developed a strong foundation
               in transforming and analyzing data to derive valuable insights.
             </p>
             <p className="text-muted-foreground">
-              My technical expertise spans across SQL for data cleaning and transformation,
-              Excel for analysis, Tableau and Power BI for creating interactive dashboards,
-              Airflow for workflow orchestration, and Python for exploratory data analysis.
+              My technical expertise spans across SQL, PostgreSQL, and MySQL for data extraction and transformation,
+              Python libraries like NumPy and Pandas for analysis, Power BI and Excel for creating interactive dashboards,
+              and Apache Airflow for workflow orchestration and ETL processes.
             </p>
             <p className="text-muted-foreground">
               I'm passionate about solving complex data problems and helping organizations
-              make data-driven decisions through efficient data pipelines and insightful
+              make data-driven decisions through efficient data pipelines, quality assurance, and insightful
               visualizations.
             </p>
           </div>
@@ -43,7 +43,7 @@ const About = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-lg mb-1">Education</h4>
-                    <p className="text-muted-foreground">Bachelor's degree in Computer Science and Information Technology</p>
+                    <p className="text-muted-foreground">Bachelor's degree in Computer Science and Information Technology, Deerwalk Institute of Technology</p>
                   </div>
                 </div>
               </CardContent>
@@ -57,7 +57,7 @@ const About = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-lg mb-1">Experience</h4>
-                    <p className="text-muted-foreground">1+ year as a Data Engineer specializing in data migration and QA</p>
+                    <p className="text-muted-foreground">1+ year as a Database Engineer specializing in data migration and QA at Pioneer Associate Pvt. Ltd</p>
                   </div>
                 </div>
               </CardContent>
@@ -71,7 +71,7 @@ const About = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-lg mb-1">Technical Proficiency</h4>
-                    <p className="text-muted-foreground">SQL, Excel, Tableau, Power BI, Airflow, Python</p>
+                    <p className="text-muted-foreground">SQL, Python, PostgreSQL, Power BI, Airflow, Excel, Docker, Hadoop</p>
                   </div>
                 </div>
               </CardContent>
