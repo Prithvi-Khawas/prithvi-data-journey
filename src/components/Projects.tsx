@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -9,7 +8,8 @@ import {
   Code,
   Server,
   BarChart,
-  LineChart
+  LineChart,
+  Github
 } from "lucide-react";
 
 const projectsData = [
@@ -19,7 +19,8 @@ const projectsData = [
     description: "Designed and implemented a data quality pipeline using Apache Airflow to automate checks for completeness, accuracy, and consistency. Utilized Docker for containerized deployment.",
     icon: <Code className="h-10 w-10 text-data-blue" />,
     skills: ["Airflow", "Docker", "ETL", "Data Validation"],
-    color: "bg-blue-50"
+    color: "bg-blue-50",
+    githubLink: "#"
   },
   {
     id: 2,
@@ -27,7 +28,8 @@ const projectsData = [
     description: "Created Python scripts to extract data from external APIs, parsed JSON responses, and established PostgreSQL connections for efficient data loading and analysis.",
     icon: <Database className="h-10 w-10 text-data-teal" />,
     skills: ["Python", "APIs", "PostgreSQL", "Data Processing"],
-    color: "bg-teal-50"
+    color: "bg-teal-50",
+    githubLink: "#"
   },
   {
     id: 3,
@@ -35,7 +37,8 @@ const projectsData = [
     description: "Performed comprehensive data cleaning on large datasets using SQL. Implemented complex queries to handle missing values, duplicates, and inconsistencies in customer and transaction data.",
     icon: <Database className="h-10 w-10 text-data-purple" />,
     skills: ["SQL", "Data Cleaning", "ETL", "Data Quality"],
-    color: "bg-purple-50"
+    color: "bg-purple-50",
+    githubLink: "https://github.com/Prithvi-Khawas/Sql_data_cleaning"
   },
   {
     id: 4,
@@ -43,7 +46,8 @@ const projectsData = [
     description: "Restored and analyzed datasets in PostgreSQL related to a digital music store, performed data cleaning operations and implemented SQL queries for reporting and analysis.",
     icon: <Database className="h-10 w-10 text-data-navy" />,
     skills: ["PostgreSQL", "SQL", "Data Analysis", "Reporting"],
-    color: "bg-indigo-50"
+    color: "bg-indigo-50",
+    githubLink: "https://github.com/Prithvi-Khawas/SQLProject-Digital-Music-Store-Data-Analysis"
   },
   {
     id: 5,
@@ -51,7 +55,8 @@ const projectsData = [
     description: "Performed data cleaning and preprocessing on sales data using Excel. Implemented an interactive dashboard with slicers to visualize key sales metrics, trends, and regional performance.",
     icon: <FileText className="h-10 w-10 text-data-blue" />,
     skills: ["Excel", "Data Cleaning", "Dashboard Design", "Sales Analytics"],
-    color: "bg-blue-50"
+    color: "bg-blue-50",
+    githubLink: "https://github.com/yourusername/excel-sales-dashboard"
   },
   {
     id: 6,
@@ -59,7 +64,8 @@ const projectsData = [
     description: "Created comprehensive sales insights dashboard with Power BI using customer and transaction data. Designed interactive visualizations showing sales trends, customer segments, and product performance.",
     icon: <ChartBar className="h-10 w-10 text-data-teal" />,
     skills: ["Power BI", "Data Visualization", "Sales Analytics", "Dashboard Design"],
-    color: "bg-teal-50"
+    color: "bg-teal-50",
+    githubLink: "https://github.com/yourusername/powerbi-sales-dashboard"
   },
   {
     id: 7,
@@ -67,7 +73,8 @@ const projectsData = [
     description: "Developed interactive Tableau dashboards visualizing regional sales performance, customer demographics, and product category analysis. Implemented drill-down capabilities for detailed insights.",
     icon: <BarChart className="h-10 w-10 text-data-purple" />,
     skills: ["Tableau", "Data Visualization", "Sales Analytics", "Interactive Dashboards"],
-    color: "bg-purple-50"
+    color: "bg-purple-50",
+    githubLink: "https://github.com/yourusername/tableau-sales-analysis"
   },
   {
     id: 8,
@@ -75,7 +82,8 @@ const projectsData = [
     description: "Performed exploratory data analysis using Python libraries on health data. Implemented machine learning models like SVM, Random Forest and MLP for heart disease prediction.",
     icon: <LineChart className="h-10 w-10 text-data-navy" />,
     skills: ["Python", "EDA", "Machine Learning", "Healthcare Analytics"],
-    color: "bg-indigo-50"
+    color: "bg-indigo-50",
+    githubLink: "https://github.com/Prithvi-Khawas/Heart_Disease_EDA_and_Prediction"
   }
 ];
 
@@ -110,7 +118,14 @@ const Projects = () => {
                 </div>
               </CardContent>
               <CardFooter className="p-6 pt-0 flex justify-end">
-                <Button variant="ghost" size="sm">View Details</Button>
+                <Button 
+                  variant="ghost" 
+                  size="sm"
+                  className="flex items-center gap-2"
+                  onClick={() => window.open(project.githubLink, '_blank')}
+                >
+                  View Details
+                </Button>
               </CardFooter>
             </Card>
           ))}

@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowDown } from "lucide-react";
 
@@ -11,37 +10,49 @@ const Hero = () => {
         <div className="absolute bottom-1/4 right-1/3 w-72 h-72 bg-data-teal/10 rounded-full filter blur-3xl"></div>
       </div>
       
-      <div className="container mx-auto px-4 text-center">
-        <p className="text-data-blue font-medium mb-4 opacity-0 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-          Hello, I'm
-        </p>
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 opacity-0 animate-fade-in" style={{ animationDelay: '0.4s' }}>
-          Prithvi Khawas
-        </h1>
-        <div className="h-1 w-24 bg-gradient-to-r from-data-blue to-data-teal mx-auto mb-6 opacity-0 animate-fade-in" style={{ animationDelay: '0.6s' }}></div>
-        <h2 className="text-xl md:text-3xl font-medium mb-8 opacity-0 animate-fade-in" style={{ animationDelay: '0.8s' }}>
-          Data Engineer & Data Analyst
-        </h2>
-        <p className="max-w-2xl mx-auto text-muted-foreground mb-10 opacity-0 animate-fade-in" style={{ animationDelay: '1s' }}>
-          Transforming raw data into meaningful insights through engineering, analytics, and visualization. 
-          Specializing in data migration, quality assurance, and creating insightful dashboards with SQL, 
-          Power BI, Python, and Airflow.
-        </p>
-        <div className="flex flex-col sm:flex-row justify-center gap-4 opacity-0 animate-fade-in" style={{ animationDelay: '1.2s' }}>
-          <Button 
-            asChild 
-            size="lg" 
-            className="bg-data-blue hover:bg-data-navy transition-colors"
-          >
-            <a href="#projects">View Projects</a>
-          </Button>
-          <Button 
-            asChild 
-            variant="outline" 
-            size="lg"
-          >
-            <a href="#skills">My Skills</a>
-          </Button>
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+          <div className="text-left">
+            <p className="text-data-blue font-medium mb-4 opacity-0 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+              Hello, I'm
+            </p>
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 opacity-0 animate-fade-in" style={{ animationDelay: '0.4s' }}>
+              Prithvi Khawas
+            </h1>
+            <div className="h-1 w-24 bg-gradient-to-r from-data-blue to-data-teal mb-6 opacity-0 animate-fade-in" style={{ animationDelay: '0.6s' }}></div>
+            <h2 className="text-xl md:text-3xl font-medium mb-8 opacity-0 animate-fade-in" style={{ animationDelay: '0.8s' }}>
+              Data Engineer & Data Analyst
+            </h2>
+            <p className="text-muted-foreground mb-10 opacity-0 animate-fade-in" style={{ animationDelay: '1s' }}>
+              Transforming raw data into meaningful insights through engineering, analytics, and visualization. 
+              Specializing in data migration, quality assurance, and creating insightful dashboards with SQL, 
+              Power BI, Python, and Airflow.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 opacity-0 animate-fade-in" style={{ animationDelay: '1.2s' }}>
+              <Button 
+                asChild 
+                size="lg" 
+                className="bg-data-blue hover:bg-data-navy transition-colors"
+              >
+                <a href="#projects">View Projects</a>
+              </Button>
+              <Button 
+                asChild 
+                variant="outline" 
+                size="lg"
+              >
+                <a href="#skills">My Skills</a>
+              </Button>
+            </div>
+          </div>
+
+          <div className="flex justify-center items-center">
+            <img
+              src="./assets/pic.jpg"
+              alt="Prithvi Khawas"
+              className="w-full max-w-md rounded-lg shadow-lg"
+            />
+          </div>
         </div>
       </div>
       

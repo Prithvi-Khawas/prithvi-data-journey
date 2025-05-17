@@ -20,10 +20,25 @@ const experienceData = [
   },
   {
     id: 2,
-    role: "Frontend Developer Intern",
-    company: "Infinite IT Solutions",
+    role: "Graphic Designer",
+    company: "Deerwalk Institute of Technology (DMT)",
+    period: "April 2022 - November 2022",
+    location: "Kathmandu, Nepal",
+    responsibilities: [
+      "Created a wide range of graphic design materials for events, social media, and internal communications. ",
+      "Created ecommerce social media content for IT Trainings and Events",
+      "Worked on Deerwalkl group (Deerwalk Compware) branding and marketing materials.",
+      "Designed event banners and visual content for college clubs and student activities, ensuring brand consistency across materials."
+      
+    ],
+    skills: ["graphic design", "visual content", "branding"],
+  },
+  {
+    id: 3,
+    role: "Graphic Designer",
+    company: "Deerwalk Institute of Technology (DMT)",
     period: "March 2021 - February 2022",
-    location: "Biratnagar, Nepal (Remote)",
+    location: "Kathmandu, Nepal",
     responsibilities: [
       "Designed and implemented frontend for the projects",
       "Updated and enhanced pre-existing projects, making them more user-friendly and efficient",
